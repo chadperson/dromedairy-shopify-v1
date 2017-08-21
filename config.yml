@@ -1,0 +1,9 @@
+development:
+  password: 5e6b83fac129f37480182a53d586499f
+  theme_id: "196216392"
+  store: drome-dairy-dev.myshopify.com
+
+production:
+  password: fd3a9e2fd3e6bdb30440cc413cc36675
+  theme_id: "196183684"
+  store: dromedairy-naturals.myshopify.com
