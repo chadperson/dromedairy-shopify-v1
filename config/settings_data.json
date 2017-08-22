@@ -3,6 +3,9 @@
     "home_page_layout": "home-page_layout-1",
     "enable_rtl": false,
     "show_preloader": false,
+    "hide_title_underline": false,
+    "show_helper": true,
+    "helper_info": "https:\/\/cdn.shopify.com\/s\/files\/1\/2154\/7153\/files\/yourstore_v2.0.1.js?17249508198905744634",
     "color_body": "#ffffff",
     "color_base": "#0066cc",
     "color_baselinetitle": "#00aeef",
@@ -11,6 +14,7 @@
     "color_line": "#e5e5e5",
     "color_header": "#ffffff",
     "color_stucknavigation": "#ffffff",
+    "color_headerborder": "rgba(0,0,0,0)",
     "color_stucknavigationtext": "#333333",
     "color_stucknavigationtextactive": "#333333",
     "color_stucknavigationtextactiveline": "#00aeef",
@@ -19,6 +23,8 @@
     "color_iconnewbg": "#333333",
     "color_iconsale": "#00aeef",
     "color_slogan": "#00aeef",
+    "color_customericon": "#333333",
+    "color_customericonhover": "#1fc0a0",
     "color_carticon": "#00aeef",
     "color_carticonhover": "#333333",
     "color_cartcircle": "#e8e8e8",
@@ -27,6 +33,8 @@
     "color_linksacountheader8_hover": "#474747",
     "color_linksheader8": "#777777",
     "color_linksheader8_hover": "#000000",
+    "color_linksheader8drop": "#777777",
+    "color_linksheader8drop_hover": "#000000",
     "color_searchheader8": "#000000",
     "color_searchheader8_hover": "#474747",
     "color_searchbg": "#ffffff",
@@ -130,8 +138,8 @@
     "colorize_bages": false,
     "color_lay2lines": "#e5e5e5",
     "enable_custom_fonts": false,
-    "font_family_1": "default_font",
-    "font_name_1": "",
+    "font_family_1": "google_font",
+    "font_name_1": "lato",
     "font_family_2": "default_font",
     "font_name_2": "",
     "show_menu_language": false,
@@ -155,13 +163,13 @@
     "tabBlockAll": true,
     "tabBlock1": true,
     "blockName1": "INFORMATION",
-    "footer-links-1": "footer-links-1",
+    "footer-links-1": "",
     "tabBlock2": true,
     "blockName2": "WHY BUY FROM US",
-    "footer-links-2": "footer-links-2",
+    "footer-links-2": "",
     "tabBlock3": true,
     "blockName3": "MY ACCOUNT",
-    "footer-links-3": "footer-links-3",
+    "footer-links-3": "",
     "show_footer_soc_but": true,
     "footer_soc_but": "<li><a class=\"icon fa fa-facebook\" href=\"\/\/facebook.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-twitter\" href=\"\/\/twitter.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-google-plus\" href=\"\/\/google.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-instagram\" href=\"\/\/instagram.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-youtube-square\" href=\"\/\/youtube.com\/\"><\/a><\/li>",
     "showfooternewsletter": true,
@@ -255,6 +263,7 @@
     "show_product_rating": true,
     "show_product_quantity": true,
     "show_product_sku": true,
+    "show_product_vendor": true,
     "variant_combobox": false,
     "show_product_alarm_message": true,
     "count_start_show": "10",
@@ -274,7 +283,7 @@
     "show_upsell_collection": true,
     "upsell_collection_title_center": false,
     "product_upsell_collection_title": "YOU MAY ALSO BE INTERESTED IN THE FOLLOWING PRODUCT(S)",
-    "product_upsell_collection": "body",
+    "product_upsell_collection": "",
     "product_upsell_collection_count": "8",
     "show_productpage_htmlblock": true,
     "productpage_htmlblock": "<div class=\"delivery-banner\" onclick=\"window.location.href = '#'\">\r\n<div class=\"delivery-banner__icon\"><span class=\"icon-redeem\"><\/span><\/div>\r\n<div class=\"delivery-banner__text\">\r\n<h3>SPECIAL OFFER 1+1=3<\/h3>\r\n<h5>Get a gift!<\/h5>\r\n<p>Donec eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet, nunc. Ut sit amet turpis.<\/p>\r\n<\/div>\r\n<\/div>\r\n<div class=\"delivery-banner\" onclick=\"window.location.href = '#'\">\r\n<div class=\"delivery-banner__icon\"><span class=\"icon-card_membership\"><\/span><\/div>\r\n<div class=\"delivery-banner__text\">\r\n<h3>FREE REWARD CARD<\/h3>\r\n<h5>Worth 10$, 50$, 100$<\/h5>\r\n<p>Eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet, nunc. Ut sit amet turpis. <\/p>\r\n<\/div>\r\n<\/div>\r\n<div class=\"delivery-banner\" onclick=\"window.location.href = '#'\">\r\n<div class=\"delivery-banner__icon\"><span class=\"icon-local_shipping\"><\/span><\/div>\r\n<div class=\"delivery-banner__text\">\r\n<h3>Free Shipping<\/h3>\r\n<h5>on orders over $100<\/h5>\r\n<p>Eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet, nunc. Ut sit amet turpis. <\/p>\r\n<\/div>\r\n<\/div>\r\n<div class=\"delivery-banner\" onclick=\"window.location.href = '#'\">\r\n<div class=\"delivery-banner__icon\"><span class=\"icon-replay_5\"><\/span><\/div>\r\n<div class=\"delivery-banner__text\">\r\n<h3>Order Return<\/h3>\r\n<h5>Returns within 5 days<\/h5>\r\n<p>Eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet, nunc. Ut sit amet turpis. <\/p>\r\n<\/div>\r\n<\/div>",
@@ -332,7 +341,7 @@
     "show_shopby_vendor_filter": true,
     "shopby_vendor_filter": "Levi's, GAP, ZARA, Polo, ecco\r\nH&M, Deisel, DOCKERS, Lacoste, Guess",
     "show_sidebar_collection": true,
-    "sidebar_collection": "makeup",
+    "sidebar_collection": "",
     "show_sidebar_customhtml": true,
     "sidebar_customhtml": "<p class=\"light-font\">Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.<\/p>\r\n<ul class=\"marker-list\">\r\n<li>Lorem ipsum dolor sit amet<\/li>\r\n<li>Conse ctetur adipisicing<\/li>\r\n<li>Elit sed do eiusmod tempor<\/li>\r\n<\/ul>\r\n<p class=\"light-font\">Amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labor.<\/p>",
     "filter_color1": "red",
@@ -347,7 +356,14 @@
     "filter_color10": "",
     "mailchimp_form_action": "\/\/myshopify.us11.list-manage.com\/subscribe\/post?u=0b829b8aff26aaaaa5da602c6&amp;id=293978d1bd",
     "popup_newsletter_show": false,
+    "popup_newsletter_showicon": true,
+    "popup_newsletter_showimage": false,
+    "popup_newsletter_hidecolor": false,
+    "popup_newsletter_title": "The Best Store!",
     "popup_newsletter_description": "<p>Please, rate theme 5. Thanks<\/p>\r\n<p class=\"color font24 custom-font font-lighter\">\r\nYOURStore\r\n<\/p>",
+    "popup_newsletter_message": "Your E-mail...",
+    "popup_newsletter_button": "subscribe",
+    "popup_newsletter_question": "DON'T SHOW THIS POPUP AGAIN",
     "popup_newsletter_delay_first": "2000",
     "popup_newsletter_delay": "3",
     "cart_design": "default",
@@ -455,60 +471,70 @@
           "1478034348386": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034350144": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034351905": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034353286": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034357462": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034359497": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034362059": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034367989": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034785065": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478034802929": {
             "type": "logo_image",
             "settings": {
+              "image": "",
               "link": ""
             }
           }
@@ -539,12 +565,14 @@
           "show_block": true,
           "show_line": true,
           "title1": "On sale",
+          "collection1": "",
           "limit_1": "8",
           "step_1": "3",
           "module_autoplay_1": false,
           "delay_time_1": "7000",
           "show_slider2": true,
           "title2": "New",
+          "collection2": "",
           "limit_2": "8",
           "step_2": "2",
           "module_autoplay_2": false,
@@ -557,6 +585,8 @@
           "1478039803755": {
             "type": "featured_collection",
             "settings": {
+              "image": "",
+              "collection": "",
               "use_custom_color": "custom_color",
               "color_title": "#4286f5"
             }
@@ -564,6 +594,8 @@
           "1478039806013": {
             "type": "featured_collection",
             "settings": {
+              "image": "",
+              "collection": "",
               "use_custom_color": "custom_color",
               "color_title": "#4286f5"
             }
@@ -571,6 +603,8 @@
           "1478039807795": {
             "type": "featured_collection",
             "settings": {
+              "image": "",
+              "collection": "",
               "use_custom_color": "custom_color",
               "color_title": "#4286f5"
             }
@@ -601,6 +635,7 @@
           "show_block": true,
           "show_line": false,
           "title1": "FEATURED PRODUCTS",
+          "collection1": "",
           "limit_1": "8",
           "step_1": "1",
           "module_autoplay_1": false,
@@ -620,6 +655,7 @@
           "1478043056757": {
             "type": "slider_list",
             "settings": {
+              "image": "",
               "banner_link": "",
               "position": "center",
               "show_video": "no",
@@ -649,6 +685,7 @@
           "1478043090706": {
             "type": "slider_list",
             "settings": {
+              "image": "",
               "banner_link": "",
               "position": "center",
               "show_video": "no",
@@ -678,6 +715,7 @@
           "1480095160291": {
             "type": "slider_list",
             "settings": {
+              "image": "",
               "banner_link": "",
               "position": "center",
               "show_video": "no",
@@ -725,6 +763,8 @@
           "1478045755068": {
             "type": "comment_item",
             "settings": {
+              "image": "",
+              "link": "",
               "item_title": "<b>Tom<\/b><br>",
               "item_hobby": "designer",
               "text": "<p>Donec eros tellus, scelerisque nec, rhoncus eget, laoreet sit amet.<\/p>"
@@ -733,6 +773,7 @@
           "1478045823732": {
             "type": "comment_item",
             "settings": {
+              "image": "",
               "link": "",
               "item_title": "<b>Eleanor<\/b><br>",
               "item_hobby": "designer",
@@ -742,6 +783,7 @@
           "1480094902622": {
             "type": "comment_item",
             "settings": {
+              "image": "",
               "link": "",
               "item_title": "<b>Eleanor<\/b><br>",
               "item_hobby": "designer",
@@ -776,6 +818,7 @@
         "settings": {
           "show_block": true,
           "title": "Blog posts",
+          "blog": "",
           "post_limit": "3",
           "blog_show_author": true,
           "blog_show_date": true,
@@ -793,18 +836,21 @@
           "1478119683471": {
             "type": "banner_item",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478119719632": {
             "type": "banner_item",
             "settings": {
+              "image": "",
               "link": ""
             }
           },
           "1478119723161": {
             "type": "banner_item",
             "settings": {
+              "image": "",
               "link": ""
             }
           }
@@ -845,7 +891,9 @@
           "1480540123633-0": {
             "type": "featured_collection",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Necklaces",
               "text_content": "",
               "show_item_button": "yes"
@@ -854,7 +902,9 @@
           "1480540123633-1": {
             "type": "featured_collection",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Bracelets",
               "text_content": "",
               "show_item_button": "yes"
@@ -863,7 +913,9 @@
           "1480540123633-2": {
             "type": "featured_collection",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Rings",
               "text_content": "<p><\/p>\r\n<p><\/p>",
               "show_item_button": "yes"
@@ -872,7 +924,9 @@
           "1480540188924": {
             "type": "featured_collection",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Earrings",
               "text_content": "",
               "show_item_button": "yes"
@@ -906,6 +960,7 @@
         "settings": {
           "center_title": true,
           "title": "new PRODUCTS",
+          "collection": "",
           "products_in_row": "2",
           "limit": "12",
           "show_lookbook": false,
@@ -920,6 +975,7 @@
           "1480542645716-0": {
             "type": "item-block",
             "settings": {
+              "image": "",
               "link": "",
               "position": "center",
               "button_design": "design3",
@@ -955,6 +1011,7 @@
           "center_title": true,
           "products_in_row": "6",
           "title1": "featured PRODUCTS",
+          "collection1": "",
           "limit_1": "12",
           "step_1": "3",
           "module_autoplay_1": false,
@@ -974,6 +1031,7 @@
           "1480542917899-0": {
             "type": "comment_item",
             "settings": {
+              "image": "",
               "link": "",
               "item_title": "Eleanor",
               "item_hobby": "designer",
@@ -983,6 +1041,7 @@
           "1480542917899-1": {
             "type": "comment_item",
             "settings": {
+              "image": "",
               "link": "",
               "item_title": "Piper",
               "item_hobby": "designer",
@@ -992,6 +1051,7 @@
           "1480542917899-2": {
             "type": "comment_item",
             "settings": {
+              "image": "",
               "link": "",
               "item_title": "MARK",
               "item_hobby": "designer",
@@ -1007,6 +1067,7 @@
         "settings": {
           "title": "Testimonials",
           "show_quotes": true,
+          "parllax_image": "",
           "module_autoplay": false,
           "delay_time": "7000",
           "use_custom_color": false,
@@ -1021,7 +1082,7 @@
         "type": "featured-blog",
         "settings": {
           "title": "Blog posts",
-          "blog": "medical",
+          "blog": "",
           "products_in_row": "4",
           "post_limit": "6",
           "blog_show_author": true,
@@ -1111,6 +1172,8 @@
           "1480543274847-0": {
             "type": "slider_list",
             "settings": {
+              "image": "",
+              "banner_link": "",
               "position": "center",
               "show_video": "no",
               "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
@@ -1139,6 +1202,8 @@
           "1480543274847-1": {
             "type": "slider_list",
             "settings": {
+              "image": "",
+              "banner_link": "",
               "position": "center",
               "show_video": "no",
               "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
@@ -1167,6 +1232,8 @@
           "1480543274847-2": {
             "type": "slider_list",
             "settings": {
+              "image": "",
+              "banner_link": "",
               "position": "center",
               "show_video": "no",
               "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
@@ -1208,7 +1275,8 @@
       "1480543947992": {
         "type": "custom_html",
         "settings": {
-          "custom_html": "<div class=\"content indent-col-none offset-top-0\">\r\n\t<div class=\"container-fluid\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-01 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img01-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">New<br> collection<\/div>\r\n\t\t\t\t\t\t\t\t<p class=\"main-font font-style-italic\"> of Necklaces and Pendants<\/p>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-02 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img02-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<p class=\"color-dark main-font font-style-italic\">Satisfy your everlasting desire<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title color-base\">Platinum<br> Buying<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl inversion\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-03 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img03-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description \">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Save<br>50%off<\/div>\r\n\t\t\t\t\t\t\t\t<p>on select styles<\/p>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-04 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img04-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description point-left\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<p class=\"main-font font-style-italic\">New Collection<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Rings<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn-underline color-white\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-05 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img05-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description point-center-vertical point-left left-offset text-center\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Bracelets<\/div>\r\n\t\t\t\t\t\t\t\t<p>get up to<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title small\"> 20% off<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>"
+          "custom_html": "<div class=\"content indent-col-none offset-top-0\">\r\n\t<div class=\"container-fluid\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-01 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img01-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">New<br> collection<\/div>\r\n\t\t\t\t\t\t\t\t<p class=\"main-font font-style-italic\"> of Necklaces and Pendants<\/p>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-02 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img02-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<p class=\"color-dark main-font font-style-italic\">Satisfy your everlasting desire<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title color-base\">Platinum<br> Buying<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl inversion\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-03 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img03-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description \">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Save<br>50%off<\/div>\r\n\t\t\t\t\t\t\t\t<p>on select styles<\/p>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-04 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img04-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description point-left\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<p class=\"main-font font-style-italic\">New Collection<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Rings<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn-underline color-white\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-05 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img05-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description point-center-vertical point-left left-offset text-center\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Bracelets<\/div>\r\n\t\t\t\t\t\t\t\t<p>get up to<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title small\"> 20% off<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>",
+          "custom_html_example": "<section class=\"content\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\tYour Content\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/section>"
         }
       },
       "collectionsall": {
@@ -1217,7 +1285,9 @@
           "1480544449202": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "WOMEN",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1227,7 +1297,9 @@
           "1480544451729": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "MEN",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1237,7 +1309,9 @@
           "1480544453838": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1247,7 +1321,9 @@
           "1480544456231": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Necklaces",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1257,7 +1333,9 @@
           "1480544458568": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Charms",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1267,7 +1345,9 @@
           "1480544460515": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1277,7 +1357,9 @@
           "1480544461987": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Earrings",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1287,7 +1369,9 @@
           "1480544463892": {
             "type": "item",
             "settings": {
+              "collection": "",
               "usecollectionimage": false,
+              "image": "",
               "custom_name": "Watches",
               "show_item_button": "yes",
               "use_custom_color": "no",
@@ -1327,6 +1411,20 @@
           "use_custom_html": false,
           "custom_html": ""
         }
+      },
+      "show-helper": {
+        "type": "show-helper",
+        "settings": {}
+      },
+      "1503403149134": {
+        "type": "instagram",
+        "settings": {
+          "userid": "4190792222",
+          "clientid": "2ef9a4456fa542f8b9a04ee0713f5e06",
+          "accesstoken": "4190792222.2ef9a44.d93f45176583490f8a0133d493ef9884",
+          "title": "INSTAGRAM FEED",
+          "design": "design1"
+        }
       }
     },
     "content_for_index": [
@@ -1338,6 +1436,7 @@
       "1480542793866",
       "1480542917899",
       "1480543148071",
+      "1503403149134",
       "1480543189392"
     ]
   },
