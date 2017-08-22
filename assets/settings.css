@@ -1311,7 +1311,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 		color-stop(0.13, rgb(0,0,0)),
 		color-stop(1, rgb(50,50,50))
 	);
-	
+
 	display:table;max-width:100%; overflow:hidden;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
 }
 
@@ -1360,10 +1360,10 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 	-	DOTTED OVERLAYS	-
 *********************************/
 .tp-dottedoverlay						{	background-repeat:repeat;width:100%;height:100%;position:absolute;top:0px;left:0px;z-index:4}
-.tp-dottedoverlay.twoxtwo				{	background:url(gridtile.png)}
+/*.tp-dottedoverlay.twoxtwo				{	background:url(gridtile.png)}
 .tp-dottedoverlay.twoxtwowhite			{	background:url(../assets/gridtile_white.png)}
 .tp-dottedoverlay.threexthree			{	background:url(../assets/gridtile_3x3.png)}
-.tp-dottedoverlay.threexthreewhite		{	background:url(../assets/gridtile_3x3_white.png)}
+.tp-dottedoverlay.threexthreewhite		{	background:url(../assets/gridtile_3x3_white.png)}*/
 /********************************
 	-	DOTTED OVERLAYS ENDS	-
 *********************************/
@@ -2440,4 +2440,3 @@ zoom: 1;
 /*********************************************
 	-	SETTINGS FOR BANNER CONTAINERS	-
 **********************************************/
-
