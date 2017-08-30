@@ -1414,8 +1414,7 @@
       },
       "show-helper": {
         "type": "show-helper",
-        "settings": {
-        }
+        "settings": {}
       },
       "1503403149134": {
         "type": "instagram",
@@ -1441,6 +1440,5 @@
       "1480543189392"
     ]
   },
-  "presets": {
-  }
+  "presets": {}
 }
