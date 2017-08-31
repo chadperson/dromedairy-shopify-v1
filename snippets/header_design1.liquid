@@ -8,7 +8,12 @@
       </div>
       <div class="col-sm-8 col-md-8 col-lg-6 col-xl-5 text-right">
         <!-- slogan start -->
-        <div class="slogan">{{ settings.header_slogan }}</div>
+        <div class="slogan">
+        	{{ settings.header_slogan }}
+	        <div class="social-links margin-bottom-none social-links--medium social-links-layout-02 social-links-no-bg">
+	          <ul>{{ settings.footer_soc_but }}</ul>
+	        </div><!-- /social-icon -->
+        </div>
         <!-- slogan end --> 						
         <div class="settings"{% unless settings.show_multiple_currencies %} style="display: none;"{% endunless %}>
           {% include "header-currency" showTitle:true %}
