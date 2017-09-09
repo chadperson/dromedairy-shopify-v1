@@ -18,7 +18,7 @@
     {% endif %}
     
     <aside class="{{ collection_grid }}" id="centerColumn">
-      <div class="title-box"><h2 class="text-center text-uppercase title-under">{{ collection.title }}</h2></div>
+      <div class="title-box"><h2 class="text-center text-uppercase title-under">{% if collection.handle == 'all' %}All Products{% else %}{{ collection.title }}{% endif %}</h2></div>
       {% if settings.show_collection_description %}{{ collection.description }}{% endif %}
       {% paginate collection.products by current_pagination_limit %}
 

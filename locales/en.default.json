@@ -126,7 +126,8 @@
       "author_by_html": "by <b>{{ author }}<\/b>"
     },
     "article": {
-      "comments_title": "{{ comments_count }} THOUGHTS ON “{{ article_title }}”"
+      "comments_title": "{{ comments_count }} THOUGHTS ON “{{ article_title }}”",
+      "shop_now_button": "Shop Now"
     },
     "comments": {
       "title": "Join the discussion",

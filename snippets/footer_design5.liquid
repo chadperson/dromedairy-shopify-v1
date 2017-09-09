@@ -3,6 +3,14 @@
   <!-- footer-data -->
   <div class="container">									
     <div class="row" >
+    	<div class="col-sm-12">
+	    	<div class="text-center hidden-xs"> <!--footer-logo-->
+	    	  <!--  Logo  --> 
+	    	  <a class="logo" href="{{ shop.url }}"> <img src="{{ "footerlogo.png" | asset_url }}" alt="{{ shop.name }}"> </a> 
+	    	  <!-- /Logo --> 
+	    	</div>
+    	</div>
+    	
       <div class="col-sm-12 text-center">
         {% if settings.contentBlockAll_design5 %}
         <!-- telephone -->
@@ -11,6 +19,11 @@
         </div>
         {% endif %}
         <!-- /telephone -->
+        
+        <div class="col-sm-12 footer-menu">
+	        {% include "footer-column-links" %}
+        </div>
+        
         {% if settings.showfooternewsletter %}
         <!-- subscribe-box -->
         <div class="subscribe-box subscribe-box-row offset-top-20">

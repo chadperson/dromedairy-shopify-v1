@@ -10512,17 +10512,36 @@ footer.layout-5 {
   /* subscribe-box-row */
   /* /subscribe-box-row */
 }
+footer.layout-5 .logo {
+	margin-bottom: 1em;
+	display: block;
+}
+footer.layout-5 .footer-menu .title-under {
+	display: none;
+}
+footer.layout-5 .footer-menu .v-links-list ul li {
+	display: inline-block;
+}
+footer.layout-5 .footer-menu .v-links-list ul li a {
+	display: block;
+    padding: .5em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 @media (max-width: 768px) {
   footer.layout-5 .offset-top-20 {
     margin-top: 0 !important;
   }
 }
 footer.layout-5 .social-links {
-  margin: 0 0 18px 0;
+  margin: 0;
   display: inline-block;
 }
+footer.layout-5 .social-links li {
+	margin-bottom: 0;
+}
 footer.layout-5 .telephone-box {
-  margin-bottom: 49px;
+  margin-bottom: 20px;
 }
 @media (max-width: 768px) {
   footer.layout-5 .telephone-box {
@@ -18820,6 +18839,14 @@ body.stop-scrolling #slider .tp-leftarrow {
 .social-links.margin-bottom-none {
   margin-bottom: 0;
 }
+.social-links.social-links--medium .icon {
+  font-size: 22px;
+}
+.social-links.social-links--medium .icon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
 .social-links.social-links--large .icon {
   font-size: 27px;
 }
@@ -18874,6 +18901,17 @@ body.stop-scrolling #slider .tp-leftarrow {
   color: {{ settings.color_text }};
 }
 /* /social-links-border
+==================================== */
+
+/* social-links in slogan
+==================================== */
+.slogan .social-links-no-bg ul a {
+	color: {{ settings.color_socialtextbase }};
+}
+.slogan .social-links ul li {
+	margin-bottom: 0px;
+}
+/* /social-links in slogan
 ==================================== */
 /****************************************
 * end social-links
@@ -22774,6 +22812,31 @@ button.pull-right,
 .btn.btn-blue.focus,
 .btn.btn-blue:focus {
   background: {{ settings.color_sliderbutton }};
+}
+.social-sharing {
+	margin: 2em 0;
+    text-align: center;
+}
+.share-button {
+	color: #FFF;
+}
+.share-button:hover,
+.share-button:active,
+.share-button:focus {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+	color: #FFF;
+}
+.share-button.share-facebook {
+	background: #3b5998;
+}
+.share-button.share-twitter {
+	background: #1da1f2;
+}
+.share-button.share-pinterest {
+	background: #bd081c;
+}
+.share-button.share-google {
+	background: #dd4b39;
 }
 /* Individual button styles */
 /* Tamaya */
