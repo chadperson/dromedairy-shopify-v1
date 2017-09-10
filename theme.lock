@@ -51,7 +51,7 @@ assets/empty-search-icon.png:
   development: 2017-08-17T19:33:54-04:00   70126bd1ce8fa6b5de4f2148beaee3f1
   production: 2017-08-18T11:33:16-04:00
 assets/favicon.png:
-  development: 2017-08-17T19:33:54-04:00   f913eacb29dfe60bc01d360ada49d851
+  development: 2017-09-04T14:01:24-04:00   27f51c2096df020ee3c3926fdc5a7e66
   production: 2017-08-18T11:33:16-04:00
 assets/favicon_pass.png:
   development: 2017-08-17T19:33:54-04:00   f913eacb29dfe60bc01d360ada49d851
@@ -93,7 +93,7 @@ assets/fonts.js.liquid:
   development: 2017-08-17T19:33:55-04:00   e764de930c2449fa3680551f86e0530c
   production: 2017-08-18T11:33:18-04:00
 assets/footerlogo.png:
-  development: 2017-08-17T19:33:55-04:00   6b74ca51170b565ab37346db58f52dbf
+  development: 2017-08-31T21:38:36-04:00   c09bf86f45c9793587b7bfb62947bcfe
   production: 2017-08-18T11:33:18-04:00
 assets/gridtile.png:
   development: 2017-08-17T19:33:55-04:00   bdc21cc00e9290a24aef7b34a0377dc4
@@ -149,13 +149,13 @@ assets/layout9_image1.jpg:
 assets/logo-dark.png:
   development: 2017-08-22T07:46:20-04:00   c89754d9ab7c86aaf3b163bbdbc8085b
 assets/logo.png:
-  development: 2017-08-22T08:10:54-04:00   c89754d9ab7c86aaf3b163bbdbc8085b
+  development: 2017-09-04T13:29:55-04:00   080576120a7fbc044488a4ec6596db2f
   production: 2017-08-18T11:33:21-04:00
 assets/logo_pass.png:
   development: 2017-08-17T19:33:57-04:00   6b74ca51170b565ab37346db58f52dbf
   production: 2017-08-18T11:33:21-04:00
 assets/logotransparent.png:
-  development: 2017-08-22T08:10:54-04:00   c89754d9ab7c86aaf3b163bbdbc8085b
+  development: 2017-09-04T13:29:55-04:00   080576120a7fbc044488a4ec6596db2f
   production: 2017-08-18T11:33:21-04:00
 assets/lookbook-img-03.jpg:
   development: 2017-08-17T19:33:57-04:00   f0a9cb39bf1d5cd2ea1af2b0c24c1626
@@ -194,7 +194,7 @@ assets/rtl.js:
   development: 2017-08-17T19:33:58-04:00   344813a8872e98fe06ba0c8e2d9377f2
   production: 2017-08-18T11:33:24-04:00
 assets/settings.css:
-  development: 2017-08-22T08:35:46-04:00   0752a627f33d05a405f1bd978ec031e2
+  development: 2017-09-10T13:48:44-04:00   67fb8248bb76d22bb128db09a313f79e
   production: 2017-08-18T11:33:24-04:00
 assets/slick-theme.css:
   development: 2017-08-17T19:33:58-04:00   a9bbcf2722dcad6cd7915d41a368900e
@@ -230,7 +230,7 @@ assets/style-rtl.css:
   development: 2017-08-17T19:34:00-04:00   4592984017f525473d3d69633deac86c
   production: 2017-08-18T11:33:26-04:00
 assets/style.css.liquid:
-  development: 2017-08-22T07:38:17-04:00   730231d72f9ef8a0cae7a25dac7f639e
+  development: 2017-09-09T11:40:26-04:00   1287b094c88b6e1e08d33f62e5e8eaef
   production: 2017-08-18T11:33:26-04:00
 assets/stylefont.css:
   development: 2017-08-17T19:34:00-04:00   a6921a65563b3b054176d7345902acd2
@@ -254,19 +254,19 @@ assets/vendor.js:
   development: 2017-08-17T19:34:00-04:00   14d8666c2b279533908081f4859c1f3e
   production: 2017-08-18T11:33:27-04:00
 config/settings_data.json:
-  development: 2017-08-22T08:46:41-04:00   abc92aced89b19b0a70f09b18f936a65
+  development: 2017-09-07T20:51:50-04:00   17ab0a1b4ef8387f9692853754a90ba2
   production: 2017-08-18T11:33:06-04:00
 config/settings_schema.json:
   development: 2017-08-22T08:14:19-04:00   62b239f885945d595d457b1b47836df9
   production: 2017-08-18T13:01:01-04:00
 layout/theme.liquid:
-  development: 2017-08-22T08:37:03-04:00   fcc8f7739a0f48b1f37b3c88231a9889
+  development: 2017-09-10T17:07:42-04:00   fa1c7e75f2656dd11f64ca505e9955be
   production: 2017-08-18T12:45:02-04:00
 locales/de.json:
   development: 2017-08-17T19:34:04-04:00   815c6d77b3b643ec2821bbee9127d141
   production: 2017-08-18T11:33:33-04:00
 locales/en.default.json:
-  development: 2017-08-17T19:34:04-04:00   0df7dec2966409eeae4ab869d83f5e0b
+  development: 2017-09-07T20:36:11-04:00   411b680e388c86cf5ab3237d9e6ad8fb
   production: 2017-08-18T11:33:33-04:00
 locales/es.json:
   development: 2017-08-17T19:34:04-04:00   8d3e2942c2741ef6cc1e331095b543f7
@@ -356,7 +356,7 @@ sections/layout-2-customhtml.liquid:
   development: 2017-08-17T19:33:51-04:00   2120aac8440789c367717c9f2a79c411
   production: 2017-08-18T11:33:04-04:00
 sections/layout-2-revolution-slider.liquid:
-  development: 2017-08-17T19:33:51-04:00   68c37ec22ab81f78410dd88af3836592
+  development: 2017-09-10T14:02:07-04:00   327f84902fd1f14db09f560f91f41f4b
   production: 2017-08-18T11:33:04-04:00
 sections/layout-2-slider-products.liquid:
   development: 2017-08-17T19:33:51-04:00   e6c21b392b195fa2d9ab7c48e6ae3e63
@@ -377,7 +377,7 @@ sections/product-header.liquid:
   development: 2017-08-17T19:33:51-04:00   18e502ba84b67cff45888825339812d3
   production: 2017-08-18T11:33:05-04:00
 sections/revolution-slider.liquid:
-  development: 2017-08-17T19:33:51-04:00   42b45104cd2ba1c2c65532b9232c0ea3
+  development: 2017-09-10T14:02:13-04:00   bc69052ac22a0434a86728df2b91db94
   production: 2017-08-18T11:33:05-04:00
 sections/show-helper.liquid:
   development: 2017-08-17T19:33:51-04:00   8767409a3bff92a745c11911d2c1503b
@@ -425,7 +425,7 @@ snippets/cartpage-design2.liquid:
   development: 2017-08-17T19:34:01-04:00   4ca7ea8d599b82755a78c22c4bdeb32f
   production: 2017-08-18T11:33:28-04:00
 snippets/collection-page.liquid:
-  development: 2017-08-17T19:34:01-04:00   c7d80fae01a70dd42ed505837ce6d49f
+  development: 2017-09-07T20:45:15-04:00   894f65e3da5857aa9aed319522920350
   production: 2017-08-18T11:33:28-04:00
 snippets/collection-sidebar-customhtml.liquid:
   development: 2017-08-17T19:34:01-04:00   2c61cec5d49b8b14083e41a2bdadd62b
@@ -500,7 +500,7 @@ snippets/footer_design4.liquid:
   development: 2017-08-17T19:34:01-04:00   5b402570d83775b88320d52a25a02142
   production: 2017-08-18T11:33:29-04:00
 snippets/footer_design5.liquid:
-  development: 2017-08-17T19:34:01-04:00   d9b192fdbffd9a8a81063ae3764b42ad
+  development: 2017-08-30T20:30:05-04:00   107092af654d502641580a7a7dfbf0e3
   production: 2017-08-18T11:33:29-04:00
 snippets/footer_design6.liquid:
   development: 2017-08-17T19:34:01-04:00   ae5ac6f156e56439d648235612db3e74
@@ -542,10 +542,10 @@ snippets/header-language.liquid:
   development: 2017-08-17T19:34:02-04:00   419e6a47eb51dcdc0ea4195728fea769
   production: 2017-08-18T11:33:29-04:00
 snippets/header_design1.liquid:
-  development: 2017-08-17T19:34:02-04:00   91c61a45f2a7ae4481016f026130c33a
+  development: 2017-09-10T16:37:26-04:00   3384871f64f201f64e34cf78836ac1b6
   production: 2017-08-18T11:33:30-04:00
 snippets/header_design2.liquid:
-  development: 2017-08-17T19:34:02-04:00   cd2e730f009a50ea18c7f0747d913004
+  development: 2017-09-10T15:54:50-04:00   08a0d2c647c40409fa44378ef73998d3
   production: 2017-08-18T11:33:30-04:00
 snippets/header_design3.liquid:
   development: 2017-08-17T19:34:02-04:00   47b1f7974e04788d3c3efc8a1df6aa88
@@ -664,6 +664,8 @@ snippets/shipping-calculator-design2.liquid:
 snippets/shipping-calculator.liquid:
   development: 2017-08-17T19:34:03-04:00   100162c7d6d3ed8eee0ffc929f5cf2bd
   production: 2017-08-18T11:33:31-04:00
+snippets/simple-share-buttons.liquid:
+  development: 2017-09-07T21:02:31-04:00   b923377088e1b782afb9f2f63cb5316b
 snippets/social-meta-tags.liquid:
   development: 2017-08-17T19:34:03-04:00   809b7e760a8d97306968c190c87864c8
   production: 2017-08-18T11:33:31-04:00
@@ -677,10 +679,10 @@ templates/404.liquid:
   development: 2017-08-17T19:34:03-04:00   2e311c043447d978bfd382ec0f890b7f
   production: 2017-08-18T12:34:53-04:00
 templates/article.liquid:
-  development: 2017-08-17T19:34:03-04:00   a10abec2b2697758c3e2e46bc05570ac
+  development: 2017-09-07T20:50:37-04:00   dcf6e82c9ea67fab693e1fcddeae228e
   production: 2017-08-18T11:33:32-04:00
 templates/blog.liquid:
-  development: 2017-08-17T19:34:03-04:00   6299fd353b0beb42530784518b1363b4
+  development: 2017-09-07T20:31:45-04:00   6c8e12460525fd09ea507ca003e47289
   production: 2017-08-18T11:33:32-04:00
 templates/cart.liquid:
   development: 2017-08-17T19:34:03-04:00   a4adac0d405ddd7fc7743617606fe89a

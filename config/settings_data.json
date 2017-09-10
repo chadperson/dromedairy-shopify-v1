@@ -26,7 +26,7 @@
     "color_customericon": "#333333",
     "color_customericonhover": "#1fc0a0",
     "color_carticon": "#c7aa4f",
-    "color_carticonhover": "#906b28",
+    "color_carticonhover": "#906B28",
     "color_cartcircle": "#e8e8e8",
     "color_cartcircletext": "#333333",
     "color_linksacountheader8": "#000000",
@@ -71,7 +71,7 @@
     "color_footerbtnbgactive": "#f5f5f5",
     "color_footerbtntextactive": "#333333",
     "color_socialbase": "#454545",
-    "color_socialtextbase": "#c4c4c4",
+    "color_socialtextbase": "#454545",
     "color_socialactive": "#00aeef",
     "color_socialtextactive": "#ffffff",
     "color_sliderbutton": "#f5f5f5",
@@ -154,26 +154,26 @@
     "transparent_header": false,
     "headertransparentcolor": "#ffffff",
     "headertransparentbgcolor": "#ffffff",
-    "header_slogan": "",
+    "header_slogan": "Default welcome msg!",
     "show_line": false,
     "showfixedbar": true,
     "transparent_footer": false,
     "footertransparentcolor": "#ffffff",
-    "footer_design": "footer_design5",
+    "footer_design": "footer_design4",
     "tabBlockAll": true,
     "tabBlock1": true,
-    "blockName1": "",
-    "footer-links-1": "footer",
-    "tabBlock2": false,
+    "blockName1": "INFORMATION",
+    "footer-links-1": "",
+    "tabBlock2": true,
     "blockName2": "WHY BUY FROM US",
     "footer-links-2": "",
-    "tabBlock3": false,
+    "tabBlock3": true,
     "blockName3": "MY ACCOUNT",
     "footer-links-3": "",
     "show_footer_soc_but": true,
-    "footer_soc_but": "<li><a class=\"icon fa fa-facebook\" href=\"https:\/\/www.facebook.com\/DromeDairy\/\" target=\"_blank\"><\/a><\/li>\n            <li><a class=\"icon fa fa-instagram\" href=\"https:\/\/www.instagram.com\/trydromedairy\/\" target=\"_blank\"><\/a><\/li>\n            <li><a class=\"icon fa fa-youtube-square\" href=\"https:\/\/youtube.com\/\" target=\"_blank\"><\/a><\/li>",
-    "showfooternewsletter": false,
-    "footer_address": "<div class=\"col-lg-12\">\n<a href=\"\/\" style=\"color:#ffffff;\">Drome\n Dairy<\/a> © 2017 . All Rights Reserved.<\/div>",
+    "footer_soc_but": "<li><a class=\"icon fa fa-facebook\" href=\"\/\/facebook.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-twitter\" href=\"\/\/twitter.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-google-plus\" href=\"\/\/google.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-instagram\" href=\"\/\/instagram.com\/\"><\/a><\/li>\r\n            <li><a class=\"icon fa fa-youtube-square\" href=\"\/\/youtube.com\/\"><\/a><\/li>",
+    "showfooternewsletter": true,
+    "footer_address": "<div class=\"col-lg-12\">\n<a href=\"\/\" style=\"color:#ffffff;\"><span style=\"color:#ffffff;\">Your<\/span>Store<\/a> © 2017 . All Rights Reserved.<\/div>",
     "contentBlockAll": true,
     "showfooterlogo": true,
     "showfootercontenttext": true,
@@ -195,8 +195,8 @@
     "shownewslettertext_design4": true,
     "newslettertitle_design4": "Contact",
     "newslettertext_design4": "<!-- address -->\r\n<address class=\"box-address\">\r\n\t<span class=\"icon icon-home\"><\/span> 7563 St. Vincent Place, Glasgow <br>\r\n\t<span class=\"icon icon-call\"><\/span> <b>+777 2345 7885 <\/b><br>\r\n\t<span class=\"icon icon-access_time\"><\/span> 7 Days a week from  10:00 am to 6:00 pm<br>\r\n\t<span class=\"icon icon-markunread\"><\/span> <a class=\"color link-underline\" href=\"mailto:info@mydomain.com\">info@mydomain.com<\/a>\r\n<\/address>\r\n<!-- \/address -->",
-    "contentBlockAll_design5": false,
-    "footercontenttext_design5": "<h4 class=\"mobile-collapse__title text-left text-uppercase visible-xs\">telephone<\/h4>\n<div class=\"mobile-collapse__content\">\n\t<address class=\"font-medium\" style=\"color: #FFF;\">\n\t\t<span class=\"icon icon-call\"><\/span> +777 2345 7885\t\t\t\t\t\t\t\t\t\t\n\t<\/address>\n\t<span class=\"color-gray\">7 Days a week from  10:00 am to 6:00 pm<\/span>\n<\/div>",
+    "contentBlockAll_design5": true,
+    "footercontenttext_design5": "<h4 class=\"mobile-collapse__title text-left text-uppercase visible-xs\">telephone<\/h4>\r\n<div class=\"mobile-collapse__content\">\r\n\t<address class=\"font-medium\">\r\n\t\t<span class=\"icon icon-call\"><\/span> +777 2345 7885\t\t\t\t\t\t\t\t\t\t\r\n\t<\/address>\r\n\t<span class=\"color-gray\">7 Days a week from  10:00 am to 6:00 pm<\/span>\r\n<\/div>",
     "show_top_line_d6": true,
     "show_fotter_content1_design6": false,
     "footer_text1_design6": "Html Code",
@@ -291,33 +291,33 @@
     "quickview_availability": true,
     "quickview_showrating": true,
     "blog_tags": "",
-    "blog_post_count": "9",
-    "blog_grid": "blog3",
-    "blog_show_author": false,
+    "blog_post_count": "3",
+    "blog_grid": "default",
+    "blog_show_author": true,
     "blog_show_date": true,
-    "show_comments": false,
-    "truncate": "15",
+    "show_comments": true,
+    "truncate": "2",
     "truncate_last_symbols": "...",
-    "show_blog_sidebar": false,
+    "show_blog_sidebar": true,
     "show_blog_sidebar_article": true,
     "sidebar_show_blogs": true,
     "sidebar_blogs_title": "Blogs",
-    "sidebar_blogs": "blog, recipes",
+    "sidebar_blogs": "blog, news, sport",
     "sidebar_show_tags": true,
     "sidebar_tags_title": "Tags",
     "sidebar_show_recent_blog": true,
     "sidebar_recent_blog_title": "RECENT POSTS",
-    "sidebar_recent_blog_name": "news",
+    "sidebar_recent_blog_name": "",
     "sidebar_recent_blog_count": "3",
-    "blog_show_author_recent": false,
+    "blog_show_author_recent": true,
     "blog_show_date_recent": true,
-    "show_comments_recent": false,
-    "truncate_recent": "15",
+    "show_comments_recent": true,
+    "truncate_recent": "4",
     "truncate_last_symbols_recent": "...",
-    "blog_sidebar_customhtml1_show": false,
+    "blog_sidebar_customhtml1_show": true,
     "blog_sidebar_customhtml1_title": "ARCHIVES",
     "blog_sidebar_customhtml1_content": "<ul class=\"categories-list\">\r\n    <li><a href=\"#\">July 2016<\/a><\/li>\r\n    <li><a href=\"#\">Juny 2016<\/a><\/li>\r\n    <li><a href=\"#\">May 2016<\/a><\/li>\r\n    <li><a href=\"#\">April 2016<\/a><\/li>\t\t\t              \r\n  <\/ul>",
-    "blog_sidebar_customhtml2_show": false,
+    "blog_sidebar_customhtml2_show": true,
     "blog_sidebar_customhtml2_title": "META",
     "blog_sidebar_customhtml2_content": "<ul class=\"categories-list\">\r\n<li><a href=\"#\">Entries RSS<\/a><\/li>\r\n<li><a href=\"#\">WordPress.org<\/a><\/li>\r\n<li><a href=\"#\">Magento<\/a><\/li>\r\n<li><a href=\"#\">Shopify<\/a><\/li>\r\n<\/ul>",
     "pagination_limit": "9",
@@ -885,25 +885,109 @@
           "title": "CATEGORIES"
         }
       },
+      "1480540123633": {
+        "type": "collection-2-list",
+        "blocks": {
+          "1480540123633-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "",
+              "usecollectionimage": false,
+              "image": "",
+              "custom_name": "Necklaces",
+              "text_content": "",
+              "show_item_button": "yes"
+            }
+          },
+          "1480540123633-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "",
+              "usecollectionimage": false,
+              "image": "",
+              "custom_name": "Bracelets",
+              "text_content": "",
+              "show_item_button": "yes"
+            }
+          },
+          "1480540123633-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "",
+              "usecollectionimage": false,
+              "image": "",
+              "custom_name": "Rings",
+              "text_content": "<p><\/p>\r\n<p><\/p>",
+              "show_item_button": "yes"
+            }
+          },
+          "1480540188924": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "",
+              "usecollectionimage": false,
+              "image": "",
+              "custom_name": "Earrings",
+              "text_content": "",
+              "show_item_button": "yes"
+            }
+          }
+        },
+        "block_order": [
+          "1480540123633-0",
+          "1480540123633-1",
+          "1480540123633-2",
+          "1480540188924"
+        ],
+        "settings": {
+          "title_size": "40",
+          "items": "4",
+          "step": "1",
+          "show_button": false,
+          "button_title": "Shop now!",
+          "custom_colors": false,
+          "base_color_title": "#333333",
+          "base_color_text": "#777777",
+          "hover_color_title": "#ef5f96",
+          "base_color_btn": "#ef5f96",
+          "hover_color_btn": "#0066cc",
+          "module_autoplay": false,
+          "delay_time": "7000"
+        }
+      },
+      "1480542538662": {
+        "type": "featured-products",
+        "settings": {
+          "center_title": true,
+          "title": "new PRODUCTS",
+          "collection": "",
+          "products_in_row": "2",
+          "limit": "12",
+          "show_lookbook": false,
+          "title2": "Lookbook",
+          "image": "",
+          "link": ""
+        }
+      },
       "1480542645716": {
         "type": "banners-section",
         "blocks": {
           "1480542645716-0": {
             "type": "item-block",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Healthy-Flatlay.jpg",
-              "link": "shopify:\/\/blogs\/news",
+              "image": "",
+              "link": "",
               "position": "center",
               "button_design": "design3",
               "title_size": "font-size88",
               "title_weight": "font-medium",
-              "title_text": "GET HEALTHIER",
+              "title_text": "FALL SALE",
               "content_size": "font-size38",
               "content_weight": "font-light",
               "content_indent": "empty-style",
-              "content_text": "Camel Milk Can Help",
-              "bannercolor_title1": "#000000",
-              "bannercolor_title2": "#000000",
+              "content_text": "50% OFF SELECT STYLES",
+              "bannercolor_title1": "#ffffff",
+              "bannercolor_title2": "#ffffff",
               "bannercolor_buttontext": "#ffffff",
               "bannercolor_buttontexthover": "#ffffff",
               "bannercolor_buttonbg": "#00aeef",
@@ -916,8 +1000,8 @@
         ],
         "settings": {
           "hide_top_indent": true,
-          "grid": "1",
-          "button_title": "LEARN MORE"
+          "grid": "20",
+          "button_title": "Shop now!"
         }
       },
       "1480542793866": {
@@ -925,13 +1009,13 @@
         "settings": {
           "show_top_line": false,
           "center_title": true,
-          "products_in_row": "3",
+          "products_in_row": "6",
           "title1": "featured PRODUCTS",
           "collection1": "",
-          "limit_1": "3",
-          "step_1": "1",
+          "limit_1": "12",
+          "step_1": "3",
           "module_autoplay_1": false,
-          "delay_time_1": "9000",
+          "delay_time_1": "7000",
           "show_slider2": false,
           "title2": "Title",
           "collection2": "",
@@ -983,7 +1067,7 @@
         "settings": {
           "title": "Testimonials",
           "show_quotes": true,
-          "parllax_image": "shopify:\/\/shop_images\/Caravan-BG.jpg",
+          "parllax_image": "",
           "module_autoplay": false,
           "delay_time": "7000",
           "use_custom_color": false,
@@ -997,13 +1081,13 @@
       "1480543148071": {
         "type": "featured-blog",
         "settings": {
-          "title": "From the Blog",
-          "blog": "news",
-          "products_in_row": "3",
-          "post_limit": "3",
-          "blog_show_author": false,
+          "title": "Blog posts",
+          "blog": "",
+          "products_in_row": "4",
+          "post_limit": "6",
+          "blog_show_author": true,
           "blog_show_date": true,
-          "show_comments": false,
+          "show_comments": true,
           "truncate": "15",
           "truncate_last_symbols": "...",
           "step": "1",
@@ -1085,39 +1169,101 @@
       "1480543274847": {
         "type": "revolution-slider",
         "blocks": {
-          "1504229059923": {
+          "1480543274847-0": {
             "type": "slider_list",
             "settings": {
-              "image": "shopify:\/\/shop_images\/testimonials-bgd.jpg",
+              "image": "",
               "banner_link": "",
               "position": "center",
-              "show_video": "yes",
-              "video_url": "https:\/\/cdn.shopify.com\/s\/files\/1\/2282\/0375\/files\/dromdairy-splash-bg-loop-low540.mp4?9089515346164241440",
+              "show_video": "no",
+              "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
               "show_infoblock": "yes",
               "show_item_button": "yes",
               "text_design": "type1",
               "infoposition": "value",
               "info_point": "205",
-              "text1": "",
-              "text2": "The Ultimate Superfood",
-              "text3": "TASTES LIKE AMAZING",
+              "text1": "Spring - Summer 2017",
+              "text2": "Save 20% on",
+              "text3": "new arrivals",
               "text4": "",
-              "use_custom_color": "no",
-              "color_text1": "#ffffff",
+              "use_custom_color": "custom_color",
+              "color_text1": "#00aeef",
+              "color_text2": "#333333",
+              "color_text3": "#333333",
+              "color_text4": "#ffffff",
+              "color_textbase": "#ffffff",
+              "color_bgbase": "#00aeef",
+              "color_textactive": "#00aeef",
+              "color_bgactive": "#00aeef",
+              "show_customhtml": "no",
+              "code": "<div class=\"tp-caption lfl stb\" data-x=\"205\" data-y=\"center\" data-voffset=\"0\" data-speed=\"600\" data-start=\"900\" data-easing=\"Power4.easeOut\" data-endeasing=\"Power4.easeIn\" style=\"z-index: 2;\">\n<div>CONTENT<\/div>\n<a href=\"#\" class=\"link-button button--border-thick\">Shop now!<\/a>\n<\/div>"
+            }
+          },
+          "1480543274847-1": {
+            "type": "slider_list",
+            "settings": {
+              "image": "",
+              "banner_link": "",
+              "position": "center",
+              "show_video": "no",
+              "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
+              "show_infoblock": "yes",
+              "show_item_button": "yes",
+              "text_design": "type1",
+              "infoposition": "right",
+              "info_point": "205",
+              "text1": "Rings",
+              "text2": "Save",
+              "text3": "70% off",
+              "text4": "",
+              "use_custom_color": "custom_color",
+              "color_text1": "#333333",
               "color_text2": "#ffffff",
               "color_text3": "#ffffff",
               "color_text4": "#ffffff",
               "color_textbase": "#ffffff",
-              "color_bgbase": "#1fc0a0",
-              "color_textactive": "#1fc0a0",
-              "color_bgactive": "#1fc0a0",
+              "color_bgbase": "#333333",
+              "color_textactive": "#333333",
+              "color_bgactive": "#333333",
+              "show_customhtml": "no",
+              "code": "<div class=\"tp-caption lfl stb\" data-x=\"205\" data-y=\"center\" data-voffset=\"0\" data-speed=\"600\" data-start=\"900\" data-easing=\"Power4.easeOut\" data-endeasing=\"Power4.easeIn\" style=\"z-index: 2;\">\n<div>CONTENT<\/div>\n<a href=\"#\" class=\"link-button button--border-thick\">Shop now!<\/a>\n<\/div>"
+            }
+          },
+          "1480543274847-2": {
+            "type": "slider_list",
+            "settings": {
+              "image": "",
+              "banner_link": "",
+              "position": "center",
+              "show_video": "no",
+              "video_url": "\/\/cdn.shopify.com\/s\/files\/1\/1236\/4838\/files\/explore.mp4?14925391354568980494",
+              "show_infoblock": "yes",
+              "show_item_button": "yes",
+              "text_design": "type1",
+              "infoposition": "value",
+              "info_point": "205",
+              "text1": "Live the moment",
+              "text2": "World",
+              "text3": "Jewelry",
+              "text4": "",
+              "use_custom_color": "custom_color",
+              "color_text1": "#00aeef",
+              "color_text2": "#ffffff",
+              "color_text3": "#ffffff",
+              "color_text4": "#ffffff",
+              "color_textbase": "#ffffff",
+              "color_bgbase": "#00aeef",
+              "color_textactive": "#00aeef",
+              "color_bgactive": "#00aeef",
               "show_customhtml": "no",
               "code": "<div class=\"tp-caption lfl stb\" data-x=\"205\" data-y=\"center\" data-voffset=\"0\" data-speed=\"600\" data-start=\"900\" data-easing=\"Power4.easeOut\" data-endeasing=\"Power4.easeIn\" style=\"z-index: 2;\">\n<div>CONTENT<\/div>\n<a href=\"#\" class=\"link-button button--border-thick\">Shop now!<\/a>\n<\/div>"
             }
           }
         },
         "block_order": [
-          "1504229059923"
+          "1480543274847-0",
+          "1480543274847-1",
+          "1480543274847-2"
         ],
         "settings": {
           "button_title": "Shop now!",
@@ -1129,8 +1275,8 @@
       "1480543947992": {
         "type": "custom_html",
         "settings": {
-          "custom_html": "<div class=\"content indent-col-none offset-top-0\">\n\t<div class=\"container-fluid\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\n\t\t\t\t<a href=\"\/blogs\/recipes\/\" class=\"promo-box design-03 zoom-in\">\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2282\/0375\/files\/Waffles-Dark.jpg?15938467225662878075\" alt=\"\">\n\t\t\t\t\t<div class=\"description \">\n\t\t\t\t\t\t<div class=\"block-table\">\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\n\t\t\t\t\t\t\t\t<div class=\"block-title\">DELICIOUS<br>RECIPES\n<\/div>\n\t\t\t\t\t\t\t\t<p>What Can you Create?<\/p>\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">LEARN MORE<\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\n\t\t\t\t<a href=\"\/blogs\/blog\/\" class=\"promo-box design-03 zoom-in\">\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2282\/0375\/files\/Strawberries-Light.jpg?15938467225662878075\" alt=\"\">\n\t\t\t\t\t<div class=\"description \">\n\t\t\t\t\t\t<div class=\"block-table\">\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\n\t\t\t\t\t\t\t\t<div class=\"block-title color-dark\">THE HEALTHY<br>DAIRY<\/div>\n\t\t\t\t\t\t\t\t<p class=\"color-dark\">Find Out Why<\/p>\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">LEARN MORE<\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\n\t\t\t\t<a href=\"\/blogs\/blog\/\" class=\"promo-box design-03 zoom-in\">\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2282\/0375\/files\/Coffee-Dark.jpg?15938467225662878075\" alt=\"\">\n\t\t\t\t\t<div class=\"description \">\n\t\t\t\t\t\t<div class=\"block-table\">\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\n\t\t\t\t\t\t\t\t<div class=\"block-title\">AMAZING<br>COFFEE<\/div>\n\t\t\t\t\t\t\t\t<p>The Difference it Makes<\/p>\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">LEARN MORE<\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-04 zoom-in\">\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2282\/0375\/files\/Large-Box-Background-Home-Page.jpg?2789890715598678818\" alt=\"\">\n\t\t\t\t\t<div class=\"description point-left\">\n\t\t\t\t\t\t<div class=\"block-table\">\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\n\t\t\t\t\t\t\t\t<p class=\"main-font font-style-italic\">New Collection<\/p>\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Rings<\/div>\n\t\t\t\t\t\t\t\t<span class=\"btn btn-underline color-white\">Shop now!<\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-05 zoom-in\">\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img05-skin20.jpg?2250964081315509955\" alt=\"\">\n\t\t\t\t\t<div class=\"description point-center-vertical point-left left-offset text-center\">\n\t\t\t\t\t\t<div class=\"block-table\">\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Bracelets<\/div>\n\t\t\t\t\t\t\t\t<p>get up to<\/p>\n\t\t\t\t\t\t\t\t<div class=\"block-title small\"> 20% off<\/div>\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">Shop now!<\/span>\n\t\t\t\t\t\t\t<\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/a>\n\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n<\/div>",
-          "custom_html_example": "<section class=\"content\">\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\tYour Content\n\t\t<\/div>\n\t<\/div>\n<\/section>"
+          "custom_html": "<div class=\"content indent-col-none offset-top-0\">\r\n\t<div class=\"container-fluid\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-01 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img01-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">New<br> collection<\/div>\r\n\t\t\t\t\t\t\t\t<p class=\"main-font font-style-italic\"> of Necklaces and Pendants<\/p>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-02 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img02-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<p class=\"color-dark main-font font-style-italic\">Satisfy your everlasting desire<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title color-base\">Platinum<br> Buying<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl inversion\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-4 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-03 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img03-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description \">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Save<br>50%off<\/div>\r\n\t\t\t\t\t\t\t\t<p>on select styles<\/p>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-04 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img04-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description point-left\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<p class=\"main-font font-style-italic\">New Collection<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Rings<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn-underline color-white\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t\t<div class=\"col-sm-6 col-xs-12\">\r\n\t\t\t\t<a href=\"\/\" class=\"promo-box design-05 zoom-in\">\r\n\t\t\t\t\t<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/1621\/6521\/files\/img05-skin20.jpg?2250964081315509955\" alt=\"\">\r\n\t\t\t\t\t<div class=\"description point-center-vertical point-left left-offset text-center\">\r\n\t\t\t\t\t\t<div class=\"block-table\">\r\n\t\t\t\t\t\t\t<div class=\"block-table-cell\">\r\n\t\t\t\t\t\t\t\t<div class=\"block-title\">Bracelets<\/div>\r\n\t\t\t\t\t\t\t\t<p>get up to<\/p>\r\n\t\t\t\t\t\t\t\t<div class=\"block-title small\"> 20% off<\/div>\r\n\t\t\t\t\t\t\t\t<span class=\"btn btn--ys btn--xl\">Shop now!<\/span>\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/a>\r\n\t\t\t<\/div>\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/div>",
+          "custom_html_example": "<section class=\"content\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\tYour Content\r\n\t\t<\/div>\r\n\t<\/div>\r\n<\/section>"
         }
       },
       "collectionsall": {
@@ -1268,8 +1414,7 @@
       },
       "show-helper": {
         "type": "show-helper",
-        "settings": {
-        }
+        "settings": {}
       },
       "1503403149134": {
         "type": "instagram",
@@ -1285,14 +1430,15 @@
     "content_for_index": [
       "1480543274847",
       "1480543947992",
-      "1480542793866",
+      "1480540123633",
+      "1480542538662",
       "1480542645716",
-      "1480543148071",
+      "1480542793866",
       "1480542917899",
+      "1480543148071",
       "1503403149134",
       "1480543189392"
     ]
   },
-  "presets": {
-  }
+  "presets": {}
 }

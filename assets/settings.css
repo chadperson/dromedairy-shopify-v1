@@ -1274,6 +1274,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 								margin-left: -28px;
 								text-align: center;
 								cursor: pointer;
+								display: none;
 							}
 
 .html5vid .tp-revstop		{	width:15px;height:20px; border-left:5px solid #fff; border-right:5px solid #fff; position:relative;margin:10px 20px; box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}
