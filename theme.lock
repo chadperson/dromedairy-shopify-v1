@@ -356,7 +356,7 @@ sections/layout-2-customhtml.liquid:
   development: 2017-08-17T19:33:51-04:00   2120aac8440789c367717c9f2a79c411
   production: 2017-08-18T11:33:04-04:00
 sections/layout-2-revolution-slider.liquid:
-  development: 2017-09-10T14:02:07-04:00   327f84902fd1f14db09f560f91f41f4b
+  development: 2017-09-11T00:27:11-04:00   f66f66bf0ce4e1f06ee7f61d2434d911
   production: 2017-08-18T11:33:04-04:00
 sections/layout-2-slider-products.liquid:
   development: 2017-08-17T19:33:51-04:00   e6c21b392b195fa2d9ab7c48e6ae3e63
@@ -377,7 +377,7 @@ sections/product-header.liquid:
   development: 2017-08-17T19:33:51-04:00   18e502ba84b67cff45888825339812d3
   production: 2017-08-18T11:33:05-04:00
 sections/revolution-slider.liquid:
-  development: 2017-09-10T14:02:13-04:00   bc69052ac22a0434a86728df2b91db94
+  development: 2017-09-11T00:27:17-04:00   91faea6c107976094d32dbea2ff936c4
   production: 2017-08-18T11:33:05-04:00
 sections/show-helper.liquid:
   development: 2017-08-17T19:33:51-04:00   8767409a3bff92a745c11911d2c1503b
