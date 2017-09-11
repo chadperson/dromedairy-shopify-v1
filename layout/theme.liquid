@@ -74,7 +74,36 @@
       display: none !important;
     }
     .tp-caption {
-    padding-top: 40px !important;
+    /*padding-top: 40px !important;*/
+    }
+    .tp-simpleresponsive .caption, .tp-simpleresponsive .tp-caption {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      /*border-top: 8px solid #0084C9;
+      border-bottom: 8px solid #0084C9;
+      border-width: 8px 0 !important;*/
+    }
+    .tp-caption.lfl.stb.start {
+      right: 10%;
+      left: 10% !important;
+      padding: 30px 0 !important;
+      margin-top: 30px !important;
+      width: 80%;
+    }
+    .tp-caption > .link-button.button--border-thick {
+      max-width: 300px;
+    }
+    .tp-caption1--wd-2 {
+      font-size: 76px !important;
+      line-height: 66px !important;
+      font-weight: bolder;
+    }
+    .tp-caption1--wd-3 {
+      font-size: 60px !important;
+      line-height: 54px !important;
+      margin-top: 10px !important;
     }
     .stuck-nav {
       /*background: rgba(255,255,255,.25);*/
@@ -89,8 +118,6 @@
       position: absolute;
       left: calc(80% - 120px);
       margin: 15px auto;
-      /*max-height: 30px;*/
-      /*background-image: url("https://cdn.shopify.com/s/files/1/2282/0375/files/logo-sm.png?9814405448078749981");*/
       background-image: url("https://cdn.shopify.com/s/files/1/2282/0375/t/2/assets/logo.png?9525345169215093927");
       background-size: contain;
       background-repeat: no-repeat;
@@ -154,6 +181,26 @@
         height: calc(90%);
         width: 130px;
       }
+    }
+    @media (max-width: 767px)  {
+      .tp-caption1--wd-2 {
+        font-size: 50px !important;
+        line-height: 48px !important;
+        font-weight: bolder;
+      }
+      .tp-caption1--wd-3 {
+        font-size: 40px !important;
+        line-height: 42px !important;
+        margin-top: 8px !important;
+      }
+      .tp-caption.lfl.stb.start {
+        right: 5%;
+        left: 5% !important;
+        padding: 0 !important;
+        margin-top: 0px !important;
+        width: 90%;
+      }
+
     }
     @media (max-width: 360px){
       #header .stuck-nav.fixedbar .row > div.logo-sm {
