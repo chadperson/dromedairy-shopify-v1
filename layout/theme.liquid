@@ -60,11 +60,14 @@
     #header {
       z-index: 1000;
       padding-bottom: 0;
-      position: fixed;
+      position: relative;
       width: 100%;
       padding-top: 0px;
       background: transparent !important;
       transition: all .25s ease-in-out;
+    }
+    body.index header#header {
+      position: fixed;
     }
     #header:hover {
       background: rgba(255,255,255,.75) !important;
@@ -157,6 +160,9 @@
       #header {
         padding-top: 0px;
         background: rgba(255,255,255,.9) !important;
+        position: relative;
+      }
+      body.index header#header {
         position: relative;
       }
       #header .logo.img-responsive {

@@ -260,7 +260,7 @@ config/settings_schema.json:
   development: 2017-08-22T08:14:19-04:00   62b239f885945d595d457b1b47836df9
   production: 2017-08-18T13:01:01-04:00
 layout/theme.liquid:
-  development: 2017-09-10T23:17:36-04:00   dfa5502bf1ec751fc16b061eaa6cf1de
+  development: 2017-09-10T23:33:06-04:00   078be7a2a93c75a87d35362bd096a269
   production: 2017-08-18T12:45:02-04:00
 locales/de.json:
   development: 2017-08-17T19:34:04-04:00   815c6d77b3b643ec2821bbee9127d141
