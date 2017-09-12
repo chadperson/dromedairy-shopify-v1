@@ -254,7 +254,7 @@ assets/vendor.js:
   development: 2017-08-17T19:34:00-04:00   14d8666c2b279533908081f4859c1f3e
   production: 2017-08-18T11:33:27-04:00
 config/settings_data.json:
-  development: 2017-09-07T20:51:50-04:00   17ab0a1b4ef8387f9692853754a90ba2
+  development: 2017-09-12T14:57:19-04:00   4e2b08d136a32f5e5536409f555df2a3
   production: 2017-08-18T11:33:06-04:00
 config/settings_schema.json:
   development: 2017-08-22T08:14:19-04:00   62b239f885945d595d457b1b47836df9
