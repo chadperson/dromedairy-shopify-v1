@@ -230,7 +230,7 @@ assets/style-rtl.css:
   development: 2017-08-17T19:34:00-04:00   4592984017f525473d3d69633deac86c
   production: 2017-08-18T11:33:26-04:00
 assets/style.css.liquid:
-  development: 2017-09-09T11:40:26-04:00   1287b094c88b6e1e08d33f62e5e8eaef
+  development: 2017-09-12T15:48:13-04:00   2d816fc82d7b1e12d7551b5226b7dd0e
   production: 2017-08-18T11:33:26-04:00
 assets/stylefont.css:
   development: 2017-08-17T19:34:00-04:00   a6921a65563b3b054176d7345902acd2
@@ -260,7 +260,7 @@ config/settings_schema.json:
   development: 2017-08-22T08:14:19-04:00   62b239f885945d595d457b1b47836df9
   production: 2017-08-18T13:01:01-04:00
 layout/theme.liquid:
-  development: 2017-09-11T08:45:53-04:00   94637cc7e85f0737c0aae7d6dd183c06
+  development: 2017-09-12T15:46:09-04:00   1e07ebeb6fb9c7549d999beff0e7e69b
   production: 2017-08-18T12:45:02-04:00
 locales/de.json:
   development: 2017-08-17T19:34:04-04:00   815c6d77b3b643ec2821bbee9127d141
