@@ -1,130 +1,161 @@
-<div class="tp-banner-container content" data-section-id="{{ section.id }}" data-section-type="slideshow-section">
-  {% if section.blocks.size > 0 %}
-  <div class="tp-banner-{{ section.id }}" data-speed="{{ section.settings.delay_time }}" data-fullscreen="{{ section.settings.fullscreen }}" data-startheight="{{ section.settings.start_height }}">
-    <ul>
-      {% for block in section.blocks %}
-      {% if block.settings.image != blank %}{% assign img_url = block.settings.image | img_url: 'x1024' %}
-      {% else %}{% assign img_url = 'template_slider.png' | asset_url %}
-      {% endif %}
-      <!-- SLIDE -->
-      <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide"{% if block.settings.show_item_button != 'yes' and block.settings.banner_link != blank %} data-link="{{ block.settings.banner_link }}"{% endif %}>
-        {% if block.settings.show_customhtml == 'no' %}
-        <!-- MAIN IMAGE -->
-        <img src="{{ img_url }}" alt="{{ block.settings.image.alt }}" data-bgposition="center {{ block.settings.position }}" data-bgfit="cover" data-bgrepeat="no-repeat">
-        {% if block.settings.show_video == "yes" %}<div class="tp-caption tp-fade fadeout fullscreenvideo"
-             data-x="0"
-             data-y="0"
-             data-speed="1000"
-             data-start="1100"
-             data-easing="Power4.easeOut"
-             data-endspeed="1500"
-             data-endeasing="Power4.easeIn"
-             data-autoplay="true"
-             data-autoplayonlyfirsttime="false"
-             data-nextslideatend="true"
-             data-forceCover="1"
-             data-dottedoverlay="twoxtwo"
-             data-aspectratio="16:9"
-             data-forcerewind="on"
-             style="z-index: 2">
+{% if section.settings.slider_class == "video" %}
+	<div class="video-banner">
+		<div class="video-bgd">
+			<video id="header-video" class="movie" preload="" poster="//cdn.shopify.com/s/files/1/1848/3101/files/Background-Header-Video-3.gif?1710261879599161116" muted="" loop="">
+				<source src="//cdn.shopify.com/s/files/1/2282/0375/files/dromdairy-splash-bg-loop-low540.mp4?9089515346164241440" type="video/mp4">
+			</source></video>
+			
+			<script>
+			(function() {
+				/**
+				* Video element
+				* @type {HTMLElement}
+				*/
+				var video = document.getElementById("header-video");
+				var screenWidth = $(window).width();
+	
+				if (screenWidth > 767){
+					video.addEventListener( "canplay", function() {
+						video.play();
+					});
+				}
+			})();
+			</script>
+{% endif %}
 
-          <a href="#" class="rev-link-video"></a>
-          <video loop autoplay muted class="movie video-js vjs-default-skin" preload="none" width="100%" height="100%" poster='{{ img_url }}' data-setup="{}">
-            <source src='{{ block.settings.video_url | replace: "http:", "" | replace: "https:", ""  }}' />
-          </video></div>{% endif %}
+		<div class="tp-banner-container content" data-section-id="{{ section.id }}" data-section-type="slideshow-section">
+		  {% if section.blocks.size > 0 %}
+		  <div class="tp-banner-{{ section.id }}" data-speed="{{ section.settings.delay_time }}" data-fullscreen="{{ section.settings.fullscreen }}" data-startheight="{{ section.settings.start_height }}">
+		    <ul>
+		      {% for block in section.blocks %}
+		      {% if block.settings.image != blank %}{% assign img_url = block.settings.image | img_url: 'x1024' %}
+		      {% else %}{% assign img_url = 'template_slider.png' | asset_url %}
+		      {% endif %}
+		      <!-- SLIDE -->
+		      <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide"{% if block.settings.show_item_button != 'yes' and block.settings.banner_link != blank %} data-link="{{ block.settings.banner_link }}"{% endif %}>
+		        {% if block.settings.show_customhtml == 'no' %}
+		        <!-- MAIN IMAGE -->
+		        <img src="{{ img_url }}" alt="{{ block.settings.image.alt }}" data-bgposition="center {{ block.settings.position }}" data-bgfit="cover" data-bgrepeat="no-repeat">
+		        {% if block.settings.show_video == "yes" %}<div class="tp-caption tp-fade fadeout fullscreenvideo"
+		             data-x="0"
+		             data-y="0"
+		             data-speed="1000"
+		             data-start="1100"
+		             data-easing="Power4.easeOut"
+		             data-endspeed="1500"
+		             data-endeasing="Power4.easeIn"
+		             data-autoplay="true"
+		             data-autoplayonlyfirsttime="false"
+		             data-nextslideatend="true"
+		             data-forceCover="1"
+		             data-dottedoverlay="twoxtwo"
+		             data-aspectratio="16:9"
+		             data-forcerewind="on"
+		             style="z-index: 2">
+		
+		          <a href="#" class="rev-link-video"></a>
+		          <video loop autoplay muted class="movie video-js vjs-default-skin" preload="none" width="100%" height="100%" poster='{{ img_url }}' data-setup="{}">
+		            <source src='{{ block.settings.video_url | replace: "http:", "" | replace: "https:", ""  }}' />
+		          </video></div>{% endif %}
+		
+		        {% capture infoposition %}{% if block.settings.infoposition == "value" %}{{ block.settings.info_point }}{% else %}{{ block.settings.infoposition }}{% endif %}{% endcapture %}
+		        {% capture ani %}{% if block.settings.infoposition == "value" %}lfl{% elsif block.settings.infoposition == "right" %}lfr{% else %}lfb{% endif %}{% endcapture %}
+		        {% capture offset %}{% if block.settings.infoposition == "value" %}0{% elsif block.settings.infoposition == "right" %}-{{ block.settings.info_point }}{% else %}0{% endif %}{% endcapture %}
+		        {% if block.settings.show_infoblock == 'yes' %}{% case block.settings.text_design %}
+		          {% when 'type2' %}
+		          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="-5" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
+		            {% if block.settings.text1 != '' %}<div class="tp-caption2--wd-1"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
+		            {% if block.settings.text2 != '' %}<div class="tp-caption2--wd-2"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
+		            {% if block.settings.text3 != '' %}<div class="tp-caption2--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
+		            {% if block.settings.text4 != '' %}<div class="tp-caption2--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
+		            {% if block.settings.show_item_button == 'yes' %}<a href="{{ block.settings.banner_link }}" class="link-button button--border-thick pull-right" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a>{% endif %}
+		          </div>
+		          {% when 'type3' %}
+		          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
+		            {% if block.settings.text1 != '' %}<div class="tp-caption3--wd-1"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
+		            {% if block.settings.text2 != '' %}<div class="tp-caption3--wd-2"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
+		            {% if block.settings.text3 != '' %}<div class="tp-caption3--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
+		            {% if block.settings.text4 != '' %}<div class="tp-caption3--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
+		            {% if block.settings.show_item_button == 'yes' %}<div class="text-center">
+		            <a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a>
+		            </div>{% endif %}
+		          </div>
+		          {% when 'type4' %}
+		          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
+		            {% if block.settings.text1 != '' %}<div class="slide_1_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
+		            {% if block.settings.text2 != '' %}<div class="slide_1_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
+		            {% if block.settings.text3 != '' %}<div class="slide_1_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
+		            {% if block.settings.text4 != '' %}<div class="slide_1_lingerie_text03"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
+		            {% if block.settings.show_item_button == 'yes' %}<div class="slide_1_lingerie_text04"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
+		          </div>
+		          {% when 'type5' %}
+		          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
+		            {% if block.settings.text1 != '' %}<div class="slide_2_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
+		            {% if block.settings.text2 != '' %}<div class="slide_2_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
+		            {% if block.settings.text3 != '' %}<div class="slide_2_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
+		            {% if block.settings.text4 != '' %}<div class="slide_1_lingerie_text03"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
+		            {% if block.settings.show_item_button == 'yes' %}<div class="slide_2_lingerie_text04"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
+		          </div>
+		          {% when 'type6' %}
+		          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
+		            {% if block.settings.text1 != '' %}<div class="slide_3_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
+		            {% if block.settings.text2 != '' %}<div class="slide_3_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
+		            {% if block.settings.text3 != '' %}<div class="slide_3_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
+		            {% if block.settings.text4 != '' %}<div class="slide_3_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
+		            {% if block.settings.show_item_button == 'yes' %}<div class="slide_3_lingerie_text03"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
+		          </div>
+		          {% when 'type7' %}
+		          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
+		            {% if block.settings.text1 != '' %}<div class="slide_3_watches_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
+		            {% if block.settings.text2 != '' %}<div class="slide_3_watches_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
+		            {% if block.settings.text3 != '' %}<div class="slide_3_watches_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
+		            {% if block.settings.text4 != '' %}<div class="slide_3_watches_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
+		            {% if block.settings.show_item_button == 'yes' %}<div class="slide_3_watches_text03"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
+		          </div>
+		          {% else %}
+		          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="{% if block.settings.text4 == '' and block.settings.show_item_button == 'yes' and block.settings.banner_link != blank %}60{% else %}0{% endif %}" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
+		            {% if block.settings.text1 != '' %}<div class="tp-caption1--wd-1"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
+		            {% if block.settings.text2 != '' %}<div class="tp-caption1--wd-2"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
+		            {% if block.settings.text3 != '' %}<div class="tp-caption1--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
+		            {% if block.settings.text4 != '' %}<div class="tp-caption1--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
+		            {% if block.settings.show_item_button == 'yes' %}<a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a>{% endif %}
+		          </div>
+		          {% endcase %}{% endif %}
+		        {% else %}{{ block.settings.code }}
+		        {% endif %}
+		      </li>
+		      <!-- /SLIDE -->
+		      {% endfor %}
+		    </ul>
+		  </div>
+		  {% else %}
+		  <span style="display: flex; justify-content: center;">This section doesn’t currently include any content. Add content to this section using the sidebar.</span>
+		  {% endif %}
+		</div>
+		{% for block in section.blocks %}{% if block.settings.use_custom_color == "custom_color" %}
+		<style>
+		  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .link-button {
+		  	color: {{ block.settings.color_textbase }} !important;
+		  	background: {{ block.settings.color_bgbase }};
+		  }
+		  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .button--border-thick {
+		  	border-color: {{ block.settings.color_bgbase }};
+		  }
+		  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .link-button:hover {
+		  	color: {{ block.settings.color_textactive }} !important;
+		  	background: none;
+		  }
+		  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .link-button:hover.button--border-thick {
+		  	border-color: {{ block.settings.color_bgactive }};
+		  }
+		</style>
+		{% endif %}{% endfor %}
 
-        {% capture infoposition %}{% if block.settings.infoposition == "value" %}{{ block.settings.info_point }}{% else %}{{ block.settings.infoposition }}{% endif %}{% endcapture %}
-        {% capture ani %}{% if block.settings.infoposition == "value" %}lfl{% elsif block.settings.infoposition == "right" %}lfr{% else %}lfb{% endif %}{% endcapture %}
-        {% capture offset %}{% if block.settings.infoposition == "value" %}0{% elsif block.settings.infoposition == "right" %}-{{ block.settings.info_point }}{% else %}0{% endif %}{% endcapture %}
-        {% if block.settings.show_infoblock == 'yes' %}{% case block.settings.text_design %}
-          {% when 'type2' %}
-          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="-5" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
-            {% if block.settings.text1 != '' %}<div class="tp-caption2--wd-1"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
-            {% if block.settings.text2 != '' %}<div class="tp-caption2--wd-2"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
-            {% if block.settings.text3 != '' %}<div class="tp-caption2--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
-            {% if block.settings.text4 != '' %}<div class="tp-caption2--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
-            {% if block.settings.show_item_button == 'yes' %}<a href="{{ block.settings.banner_link }}" class="link-button button--border-thick pull-right" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a>{% endif %}
-          </div>
-          {% when 'type3' %}
-          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
-            {% if block.settings.text1 != '' %}<div class="tp-caption3--wd-1"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
-            {% if block.settings.text2 != '' %}<div class="tp-caption3--wd-2"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
-            {% if block.settings.text3 != '' %}<div class="tp-caption3--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
-            {% if block.settings.text4 != '' %}<div class="tp-caption3--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
-            {% if block.settings.show_item_button == 'yes' %}<div class="text-center">
-            <a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a>
-            </div>{% endif %}
-          </div>
-          {% when 'type4' %}
-          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
-            {% if block.settings.text1 != '' %}<div class="slide_1_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
-            {% if block.settings.text2 != '' %}<div class="slide_1_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
-            {% if block.settings.text3 != '' %}<div class="slide_1_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
-            {% if block.settings.text4 != '' %}<div class="slide_1_lingerie_text03"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
-            {% if block.settings.show_item_button == 'yes' %}<div class="slide_1_lingerie_text04"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
-          </div>
-          {% when 'type5' %}
-          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
-            {% if block.settings.text1 != '' %}<div class="slide_2_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
-            {% if block.settings.text2 != '' %}<div class="slide_2_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
-            {% if block.settings.text3 != '' %}<div class="slide_2_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
-            {% if block.settings.text4 != '' %}<div class="slide_1_lingerie_text03"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
-            {% if block.settings.show_item_button == 'yes' %}<div class="slide_2_lingerie_text04"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
-          </div>
-          {% when 'type6' %}
-          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
-            {% if block.settings.text1 != '' %}<div class="slide_3_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
-            {% if block.settings.text2 != '' %}<div class="slide_3_lingerie_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
-            {% if block.settings.text3 != '' %}<div class="slide_3_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
-            {% if block.settings.text4 != '' %}<div class="slide_3_lingerie_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
-            {% if block.settings.show_item_button == 'yes' %}<div class="slide_3_lingerie_text03"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
-          </div>
-          {% when 'type7' %}
-          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="0" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
-            {% if block.settings.text1 != '' %}<div class="slide_3_watches_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
-            {% if block.settings.text2 != '' %}<div class="slide_3_watches_text01"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
-            {% if block.settings.text3 != '' %}<div class="slide_3_watches_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
-            {% if block.settings.text4 != '' %}<div class="slide_3_watches_text02"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
-            {% if block.settings.show_item_button == 'yes' %}<div class="slide_3_watches_text03"><a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a></div>{% endif %}
-          </div>
-          {% else %}
-          <div class="tp-caption {{ ani }} stb" data-x="{{ infoposition }}" data-y="center" data-voffset="{% if block.settings.text4 == '' and block.settings.show_item_button == 'yes' and block.settings.banner_link != blank %}60{% else %}0{% endif %}" data-hoffset="{{ offset }}" data-speed="600" data-start="900" data-easing="Power4.easeOut" data-endeasing="Power4.easeIn" style="z-index: 2;">
-            {% if block.settings.text1 != '' %}<div class="tp-caption1--wd-1"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text1 }}"{% endif %}>{{ block.settings.text1 }}</div>{% endif %}
-            {% if block.settings.text2 != '' %}<div class="tp-caption1--wd-2"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text2 }}"{% endif %}>{{ block.settings.text2 }}</div>{% endif %}
-            {% if block.settings.text3 != '' %}<div class="tp-caption1--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text3 }}"{% endif %}>{{ block.settings.text3 }}</div>{% endif %}
-            {% if block.settings.text4 != '' %}<div class="tp-caption1--wd-3"{% if block.settings.use_custom_color == 'custom_color' %} style="color:{{ block.settings.color_text4 }}"{% endif %}>{{ block.settings.text4 }}</div>{% endif %}
-            {% if block.settings.show_item_button == 'yes' %}<a href="{{ block.settings.banner_link }}" class="link-button button--border-thick" data-text="{{ section.settings.button_title }}">{{ section.settings.button_title }}</a>{% endif %}
-          </div>
-          {% endcase %}{% endif %}
-        {% else %}{{ block.settings.code }}
-        {% endif %}
-      </li>
-      <!-- /SLIDE -->
-      {% endfor %}
-    </ul>
-  </div>
-  {% else %}
-  <span style="display: flex; justify-content: center;">This section doesn’t currently include any content. Add content to this section using the sidebar.</span>
-  {% endif %}
-</div>
-{% for block in section.blocks %}{% if block.settings.use_custom_color == "custom_color" %}
-<style>
-  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .link-button {
-  	color: {{ block.settings.color_textbase }} !important;
-  	background: {{ block.settings.color_bgbase }};
-  }
-  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .button--border-thick {
-  	border-color: {{ block.settings.color_bgbase }};
-  }
-  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .link-button:hover {
-  	color: {{ block.settings.color_textactive }} !important;
-  	background: none;
-  }
-  [data-section-id~="{{ section.id }}"] li:nth-child({{ forloop.index }}) .link-button:hover.button--border-thick {
-  	border-color: {{ block.settings.color_bgactive }};
-  }
-</style>
-{% endif %}{% endfor %}
+{% if section.settings.slider_class == "video" %}
+		</div>
+	</div>
+{% endif %}
+
 
 {% schema %}
 {
@@ -181,6 +212,12 @@
       "label": "Slider Height. Integer",
       "default": "800",
 	  "info": "Work when \"Fullscreen Slider\" = off"
+    },
+    {
+      "type": "text",
+      "id": "slider_class",
+      "label": "Slider Class",
+      "info": "Add a class to this slider"
     }
   ],
   "blocks": [

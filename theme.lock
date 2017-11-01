@@ -231,7 +231,7 @@ assets/style-rtl.css:
   development: 2017-08-17T19:34:00-04:00   4592984017f525473d3d69633deac86c
   production: 2017-09-14T23:40:25-04:00   4592984017f525473d3d69633deac86c
 assets/style.css.liquid:
-  development: 2017-09-18T18:34:00-04:00   d92c3ee2f676a7ba6839eb7be678f21e
+  development: 2017-10-31T18:41:41-04:00   de93b67de5312f93c395282e48c9d164
   production: 2017-10-19T13:00:32-04:00   de93b67de5312f93c395282e48c9d164
 assets/stylefont.css:
   development: 2017-08-17T19:34:00-04:00   a6921a65563b3b054176d7345902acd2
@@ -255,13 +255,13 @@ assets/vendor.js:
   development: 2017-08-17T19:34:00-04:00   14d8666c2b279533908081f4859c1f3e
   production: 2017-09-14T23:39:25-04:00   14d8666c2b279533908081f4859c1f3e
 config/settings_data.json:
-  development: 2017-09-18T18:19:32-04:00   b08010d2c03793d7a8cd0bc09563982c
+  development: 2017-10-31T18:41:43-04:00   fc0b71c855c8e2f8fa22863bd08e1926
   production: 2017-10-23T20:32:01-04:00   fc0b71c855c8e2f8fa22863bd08e1926
 config/settings_schema.json:
   development: 2017-08-22T08:14:19-04:00   62b239f885945d595d457b1b47836df9
   production: 2017-09-14T23:40:48-04:00   62b239f885945d595d457b1b47836df9
 layout/theme.liquid:
-  development: 2017-09-18T18:28:49-04:00   f8120ed84e4194c14cab2510baade6d8
+  development: 2017-10-31T18:41:38-04:00   b067e2d0ec6693f3bd93161b001bc46d
   production: 2017-10-18T11:44:43-04:00   b067e2d0ec6693f3bd93161b001bc46d
 locales/de.json:
   development: 2017-09-14T22:54:46-04:00   2c1ab23a40220f01c3e8af7730e24031
@@ -378,7 +378,7 @@ sections/product-header.liquid:
   development: 2017-08-17T19:33:51-04:00   18e502ba84b67cff45888825339812d3
   production: 2017-09-16T12:32:36-04:00   18e502ba84b67cff45888825339812d3
 sections/revolution-slider.liquid:
-  development: 2017-09-11T00:27:17-04:00   91faea6c107976094d32dbea2ff936c4
+  development: 2017-10-31T19:09:11-04:00   9e54fb44a5183480b1e44dec9d05cbd5
   production: 2017-09-14T23:40:05-04:00   91faea6c107976094d32dbea2ff936c4
 sections/show-helper.liquid:
   development: 2017-08-17T19:33:51-04:00   8767409a3bff92a745c11911d2c1503b
