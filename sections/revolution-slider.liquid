@@ -1,8 +1,8 @@
-{% if section.settings.slider_class == "video" %}
+{% if section.settings.slider_background_video == "video" %}
 	<div class="video-banner">
 		<div class="video-bgd">
 			<video id="header-video" class="movie" preload="" poster="//cdn.shopify.com/s/files/1/1848/3101/files/Background-Header-Video-3.gif?1710261879599161116" muted="" loop="">
-				<source src="//cdn.shopify.com/s/files/1/2282/0375/files/dromdairy-splash-bg-loop-low540.mp4?9089515346164241440" type="video/mp4">
+				<source src="{{ section.settings.background_video_url }}" type="video/mp4">
 			</source></video>
 			
 			<script>
@@ -151,7 +151,7 @@
 		</style>
 		{% endif %}{% endfor %}
 
-{% if section.settings.slider_class == "video" %}
+{% if section.settings.slider_background_video == "video" %}
 		</div>
 	</div>
 {% endif %}
@@ -214,10 +214,21 @@
 	  "info": "Work when \"Fullscreen Slider\" = off"
     },
     {
-      "type": "text",
-      "id": "slider_class",
-      "label": "Slider Class",
-      "info": "Add a class to this slider"
+      "type": "select",
+      "id": "slider_background_video",
+      "label": "Persistent Video?",
+      "info": "Set slider to have a video that runs behind the slides?",
+      "options": [
+        { "value": "video", "label": "Yes, persistent video" },
+        { "value": "normal", "label": "No, regular slides" }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "textarea",
+      "id": "background_video_url",
+      "label": "Persistent Video URL",
+      "default": "\/\/cdn.shopify.com\/s\/files\/1\/2282\/0375\/files\/dromdairy-splash-bg-loop-low540.mp4?9089515346164241440"
     }
   ],
   "blocks": [

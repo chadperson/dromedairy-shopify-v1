@@ -378,7 +378,7 @@ sections/product-header.liquid:
   development: 2017-08-17T19:33:51-04:00   18e502ba84b67cff45888825339812d3
   production: 2017-09-16T12:32:36-04:00   18e502ba84b67cff45888825339812d3
 sections/revolution-slider.liquid:
-  development: 2017-10-31T19:09:11-04:00   9e54fb44a5183480b1e44dec9d05cbd5
+  development: 2017-11-01T19:57:28-04:00   b1f599ac15196f73f59d497d28f62429
   production: 2017-09-14T23:40:05-04:00   91faea6c107976094d32dbea2ff936c4
 sections/show-helper.liquid:
   development: 2017-08-17T19:33:51-04:00   8767409a3bff92a745c11911d2c1503b
